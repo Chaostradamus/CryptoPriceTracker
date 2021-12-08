@@ -1,14 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import CoinItem from "./src/components/CoinItem";
+import HomeScreen from "./src/screens/HomeScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CoinItem name={'Lukas'}/>
-      <CoinItem name={'Vadim'} total={69}/>
-      
+      <HomeScreen />
       <StatusBar style="light" />
     </View>
   );
